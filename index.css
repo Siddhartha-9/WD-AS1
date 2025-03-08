@@ -1,6 +1,8 @@
+*{
+    color: #4B3621;
+    background-color: #F5F5DC;
+}
 header{
-    background-color: #282626;
-    color: rgb(111, 255, 0);
     padding: 20px;
     grid-area: header;
     text-align: center;
@@ -8,39 +10,37 @@ header{
 }
 
 nav{
-    background-color: #2D2D2D;
     grid-area: nav;
     border: 2px solid greenyellow;
 }
 
 main{
-    color: purple;
-    background-color: #3E363F;
     grid-area: main;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
 }
 
 aside{
-    background-color: brown;
     grid-area: aside;
 }
 
 footer{
-    background-color: bisque;
-    color: white;
     grid-area: footer;
 }
 
 body{
     display: grid;
-    background-color: #333133;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
     grid-template-areas:
     "nav nav nav"
     "header header header"
     ". main ."
-    "aside aside aside"
-    "footer footer footer";
+    ". aside ."
+    ". footer .";
 }
 
 nav ul {
@@ -50,7 +50,7 @@ nav ul {
 }
 nav a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav li {
@@ -58,8 +58,8 @@ nav li {
 }
 
 h1{
-    color: #4CAF50;
     font-size: 80px;
+    margin: 0;
 }
 
 
