@@ -1,3 +1,7 @@
+a:hover{
+    padding: 2px;
+    margin: 2px;
+}
 *{
     color: #4B3621;
     background-color: #F5F5DC;
@@ -12,35 +16,18 @@ header{
 nav{
     grid-area: nav;
     border: 2px solid greenyellow;
-}
-
-main{
-    grid-area: main;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: center;
-}
-
-aside{
-    grid-area: aside;
-}
-
-footer{
-    grid-area: footer;
+    background-color:#000000 ;
 }
 
 body{
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 40% 40% 20%;
     grid-template-rows: auto;
     grid-template-areas:
     "nav nav nav"
     "header header header"
-    ". main ."
-    ". aside ."
-    ". footer .";
+    "main main aside"
+    "footer footer footer";
 }
 
 nav ul {
@@ -57,9 +44,19 @@ nav li {
     list-style: none;
 }
 
-h1{
-    font-size: 80px;
-    margin: 0;
+.grid-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-
+.grid-item{
+    background-color: aqua;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+}
