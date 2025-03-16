@@ -5,6 +5,9 @@ a:hover{
 *{
     color: #4B3621;
     background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 header{
     padding: 20px;
@@ -38,6 +41,11 @@ footer{
 }
 
 body{
+    background:#3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: auto;
@@ -68,7 +76,44 @@ h1{
     margin: 0;
 }
 
+.contact{
+    background: #454545;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background: white;
+    font-size: 16px;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+button{
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ddd;
+}
 
 
 
