@@ -21,7 +21,7 @@ nav{
 
 main{
     grid-area: main;
-    height: 80vh;
+    height: 270vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -77,6 +77,9 @@ main h2{
 }
 main p{
     border: 2px solid black;
+}
+.Validation img{
+    height: 300px;
 }
 
 
