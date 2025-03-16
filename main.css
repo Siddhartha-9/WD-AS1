@@ -1,25 +1,27 @@
-a:hover{
+a:hover {
     padding: 2px;
     margin: 2px;
 }
-*{
+
+* {
     color: #4B3621;
     background-color: #F5F5DC;
 }
-header{
+
+header {
     padding: 20px;
     grid-area: header;
     text-align: center;
-   
+
 }
 
-nav{
+nav {
     grid-area: nav;
     border: 2px solid greenyellow;
-    background-color:#000000 ;
+    background-color: #000000;
 }
 
-main{
+main {
     grid-area: main;
     height: 50vh;
     display: flex;
@@ -28,27 +30,29 @@ main{
     text-align: center;
 }
 
-aside{
+aside {
     grid-area: aside;
 }
-aside a i{
+
+aside a i {
     font-size: 3em;
 }
-footer{
+
+footer {
     grid-area: footer;
     background-color: #000000;
 }
 
-body{
+body {
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: auto;
     grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    ". main ."
-    ". aside ."
-    " footer footer footer";
+        "nav nav nav"
+        "header header header"
+        ". main ."
+        ". aside ."
+        " footer footer footer";
 }
 
 nav ul {
@@ -56,7 +60,8 @@ nav ul {
     justify-content: space-around;
 
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: black;
 }
@@ -65,20 +70,15 @@ nav li {
     list-style: none;
 }
 
-h1{
+h1 {
     font-size: 80px;
     margin: 0;
 }
 
-main img{
+main img {
     height: 308px;
     width: 331px;
     margin-left: 120px;
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-

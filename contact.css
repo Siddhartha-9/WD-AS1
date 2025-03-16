@@ -1,28 +1,30 @@
-a:hover{
+a:hover {
     padding: 2px;
     margin: 2px;
 }
-*{
+
+* {
     color: #4B3621;
     background-color: #F5F5DC;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     padding: 20px;
     grid-area: header;
     text-align: center;
-   
+
 }
 
-nav{
+nav {
     grid-area: nav;
     border: 2px solid greenyellow;
-    background-color:#000000 ;
+    background-color: #000000;
 }
 
-main{
+main {
     grid-area: main;
     height: 50vh;
     display: flex;
@@ -31,17 +33,17 @@ main{
     text-align: center;
 }
 
-aside{
+aside {
     grid-area: aside;
 }
 
-footer{
+footer {
     grid-area: footer;
     background-color: #000000;
 }
 
-body{
-    background:#3a3a3a;
+body {
+    background: #3a3a3a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,11 +52,11 @@ body{
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: auto;
     grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    ". main ."
-    ". aside ."
-    " footer footer footer";
+        "nav nav nav"
+        "header header header"
+        ". main ."
+        ". aside ."
+        " footer footer footer";
 }
 
 nav ul {
@@ -62,7 +64,8 @@ nav ul {
     justify-content: space-around;
 
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: black;
 }
@@ -71,24 +74,25 @@ nav li {
     list-style: none;
 }
 
-h1{
+h1 {
     font-size: 80px;
     margin: 0;
 }
 
-.contact{
+.contact {
     background: #454545;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
@@ -97,12 +101,12 @@ input, textarea{
     font-size: 16px;
 }
 
-textarea{
+textarea {
     height: 100px;
     resize: none;
 }
 
-button{
+button {
     background: white;
     color: black;
     padding: 10px;
@@ -115,6 +119,6 @@ button:hover {
     background: #ddd;
 }
 
-aside a i{
+aside a i {
     font-size: 3em;
 }
